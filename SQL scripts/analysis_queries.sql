@@ -10,13 +10,30 @@ GROUP BY "Aircraft_Id"
 ORDER BY "Nombre_de_Vols" DESC;
 
 -- Q2 : Nombre total de passagers par aéroport
--- Cette requête calcule la somme des passagers domestiques et internationaux pour chaque aéroport de départ.
-SELECT a."Airport_Code", a."Airport_Name",
-       SUM(f."Passengers_Domestic") + SUM(f."Passengers_International") AS "Total_Passagers"
-FROM airports a
-JOIN flight_summary_data f ON a."Airport_Code" = f."Airport_Code"
-GROUP BY a."Airport_Code", a."Airport_Name"
-ORDER BY "Total_Passagers" DESC;
+-- Cette requête calcule le nombre de passagers transportés en multipliant
+-- le nombre de vols de chaque avion par sa capacité, regroupés par aéroport.
+-- Attention : le double comptage (départ + arrivée) est volontaire, comme précisé dans l’énoncé.
+
+WITH flights_by_airport AS (
+  SELECT f."Departure_Airport_Code" AS airport_code, f."Aircraft_Id", COUNT(*) AS nb_vols
+  FROM INDIVIDUAL_FLIGHTS f
+  GROUP BY 1,2
+  UNION ALL
+  SELECT f."Destination_Airport_Code" AS airport_code, f."Aircraft_Id", COUNT(*) AS nb_vols
+  FROM INDIVIDUAL_FLIGHTS f
+  GROUP BY 1,2
+)
+SELECT
+  ap."Airport_Name" AS airport_name,
+  fb.airport_code,
+  SUM(fb.nb_vols * a."Capacity") AS passengers
+FROM flights_by_airport fb
+JOIN AIRCRAFT a  ON a."Aircraft_Id" = fb."Aircraft_Id"
+JOIN AIRPORTS ap ON ap."Airport_Code" = fb.airport_code
+GROUP BY ap."Airport_Name", fb.airport_code
+ORDER BY passengers DESC
+LIMIT 10;
+
 
 -- Q3 : Meilleure année en RPM par compagnie
 -- Cette requête identifie, pour chaque compagnie aérienne, l’année avec le revenu passager-kilomètre (RPM) le plus élevé.
