@@ -48,21 +48,35 @@ Les objectifs principaux sont :
 
 Le modèle `g72` est le plus fréquemment utilisé avec 1008 vols enregistrés, suivi du `t10` avec 553 vols. Cela met en évidence la popularité et la fréquence d’utilisation des différents avions.
 
+![Q1](Screenshots/Q1.png)
+
+
 ### Q2 – Nombre total de passagers par aéroport
 
 L’aéroport `Flocktopia (FKT)` a accueilli le plus grand nombre de passagers, avec plus de 430 millions cumulés, suivi par `Nestland Airport (NSA)` avec environ 179 millions. Ces chiffres incluent les passagers domestiques et internationaux.
+
+![Q2](Screenshots/Q2.png)
+
 
 ### Q3 – Meilleure année en RPM par compagnie
 
 Amazon Airlines a enregistré sa meilleure année en 2015 avec environ 9,17 millions de RPM. Flock Air et Goose Airways ont atteint leur pic en 2016, avec respectivement 13,4M et 3,46M RPM.
 
+![Q3](Screenshots/Q3.png)
+
+
 ### Q4 – Meilleure année en ASM par compagnie
 
 Amazon Airlines a atteint une ASM moyenne de 315931 en 2002, tandis que Flock Air et Goose Airways ont connu leurs meilleures années en 2016, avec ASM moyennes respectives de 427255 et 1100639.
 
+![Q4](Screenshots/Q4.png)
+
+
 ### Bonus – Top 5 compagnies en RPM total
 
 Amazon Airlines domine largement le classement des compagnies aériennes en termes de RPM total, confirmant sa position de leader.
+
+![Q5](Screenshots/Q5.png)
 
 ---
 
