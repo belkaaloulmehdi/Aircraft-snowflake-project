@@ -15,14 +15,14 @@ This project was completed as part of my Data Analyst training at Jedha Bootcamp
 ---
 
 ## 📂 Project Structure
-
+```
 aircraft-data-analysis
 │── create_and_load_tables.sql   # SQL script to create tables and insert data
 │── analysis_queries.sql         # SQL queries answering project questions
 │── README.md                   # This project documentation
 │── /screenshots                # Screenshots of query results in Snowflake
 │── /results                    # CSV exports of query results
-
+```
 ---
 
 ## 🔧 Usage Instructions
