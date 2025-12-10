@@ -64,4 +64,4 @@ Open-source under the [MIT License](LICENSE).
 ---
 
 ## 📌 Author  
-**Marouan Mehdi Belkaaloul** – Data Analyst trainee at Jedha Bootcamp
+**Marouan Mehdi Belkaaloul** – Data Analysis Enthusiast
