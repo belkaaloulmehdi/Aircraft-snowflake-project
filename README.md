@@ -22,6 +22,7 @@ aircraft-data-analysis
 │── README.md                   # This project documentation
 ├── [FR]RAPPORT.md              # Textual analysis in French
 ├── [EN]REPORT.md               # Textual analysis in English
+│
 │── /sql scripts
 │     ├── analysis_queries.sql
 │     ├── create_and_load_tables.sql
