@@ -45,15 +45,23 @@ cd aircraft-data-analysis
 - Best year for RPM and ASM metrics per airline.  
 - Top 5 airlines by RPM total.
 
+---
+
 ## 🗂️ Results and Visual Proof  
 - **CSV files** in `/results` contain raw exported query results for detailed analysis.  
 - **Screenshots** in `/screenshots` display results directly from Snowflake for proof of execution.
 
+---
+
 ## 🤝 Contributing  
 Feel free to fork and submit pull requests for improvements.
 
+---
+
 ## 📜 License  
 Open-source under the [MIT License](LICENSE).
+
+---
 
 ## 📌 Author  
 **Marouan Mehdi Belkaaloul** – Data Analyst trainee at Jedha Bootcamp
