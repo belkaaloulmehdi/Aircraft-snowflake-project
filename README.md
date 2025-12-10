@@ -20,6 +20,8 @@ aircraft-data-analysis
 │── create_and_load_tables.sql   # SQL script to create tables and insert data
 │── analysis_queries.sql         # SQL queries answering project questions
 │── README.md                   # This project documentation
+├── [FR]RAPPORT.md              # Textual analysis in French
+├── [EN]REPORT.md               # Textual analysis in English
 │── /screenshots                # Screenshots of query results in Snowflake
 │── /results                    # CSV exports of query results
 ```
